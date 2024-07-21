@@ -45,7 +45,7 @@ public class RepetQuestion1 {
 
         int sum = 0;
         int max = 100;
-        for (i = 0; i <= max; i++) {
+        for (int i = 0; i <= max; i++) {
             sum += i;
         }
         System.out.println(sum);
