@@ -33,6 +33,8 @@ public class While {
                 System.out.println("합이 10보다 크면 종료 total=" + total);
                 break;
             }
+
+            i++;
         }
     }
 }
