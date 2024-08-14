@@ -1,6 +1,6 @@
 package scope;
 
-public class scope1 {
+public class scope {
     /*
         [ 지역변수와 스코프 ]
             변수는 선언한 위치에 따라 지역 변수, 멤버 변수(클래스 변수, 인스턴스 변수)와 같이 분류된다.
