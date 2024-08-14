@@ -1,6 +1,6 @@
 package condition;
 
-public class ContQuestion1 {
+public class CondQuestion1 {
     public static void main(String[] args) {
         /* if 문 */
         int score = 85;
