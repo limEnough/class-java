@@ -1,6 +1,6 @@
 package scope;
 
-public class casting1 {
+public class Casting1 {
     /*
         [자동 형변환]
 
