@@ -9,7 +9,6 @@ public class Array3 {
         int[][] arr = new int[2][3] 와 같이 선언하고 생성한다.
         그리고 arr[1][2] 와 같이 사용하는데, 먼저 행 번호를 찾고, 그 다음에 열 번호를 찾으면 된다.
      */
-
     public static void main(String[] args) {
         int[][] arr = new int[2][3]; //행2, 열3
         arr[0][0] = 1; //0행, 1열
