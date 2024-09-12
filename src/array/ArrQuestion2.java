@@ -42,22 +42,26 @@ public class ArrQuestion2 {
          */
         Scanner scanner = new Scanner(System.in);
 
-        Number[][] gradeArr = new Number[4][2];
+        int[][] scores = new int[4][3];
+        String[] subjects = {"국어", "영어", "수학"};
 
-        for(int i = 0; i < 4; i++) {
-            // TODO: 고민 필요! 아니면 선생님 방식대로 반복문 나눠서 전개하기
+        // 학생수 반복
+        for(int i = 0; i < scores.length; i++) {
             System.out.println((i + 1) + "번 학생의 성적을 입력하세요:");
-            System.out.print("국어 점수:");
-            double korean = scanner.nextInt();
-            System.out.print("영어 점수:");
-            double english = scanner.nextInt();
-            System.out.print("수학 점수:");
-            double math = scanner.nextInt();
 
-            gradeArr[i][0] = (korean + english + math);
-            gradeArr[i][1] = (korean + english + math) / 3;
+            // 과목수 반복
+            for (int j = 0; j < scores[i].length; j++) {
+                System.out.print(subjects[j] + " 점수:");
+                scores[i][j] = scanner.nextInt();
+            }
+        }
 
-            System.out.println((i + 1) + "번 학생의 총점:" + gradeArr[i][0] + ", 평균: " + gradeArr[i][1]);
+        // 학생의 총점과 평균 출력
+        for(int i = 0; i < scores.length; i++) {
+            int total = scores[i][0] + scores[i][1] + scores[i][2];
+            double average = (double) total / 3;
+
+            System.out.println((i + 1) + "번 학생의 총점:" + total + ", 평균: " + average);
         }
     }
 }
